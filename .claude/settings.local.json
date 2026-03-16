@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:lvyovo-wiki.tech)",
+      "Bash(npm install:*)"
+    ]
+  }
+}
