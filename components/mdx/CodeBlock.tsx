@@ -11,7 +11,7 @@ interface CodeBlockProps {
 
 export default function CodeBlock({ className, htmlContent }: CodeBlockProps) {
   const [copied, setCopied] = useState(false);
-  const preRef = useRef<HTMLPreElement>(null);
+  const preRef = useRef<HTMLDivElement>(null);
 
   // 提取语言
   const match = /language-(\w+)/.exec(className || '');
