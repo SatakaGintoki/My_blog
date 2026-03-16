@@ -78,11 +78,10 @@ export default function AboutPage() {
         <h2 className="text-2xl font-bold mb-4">个人简介</h2>
         <div className="space-y-4 text-gray-600 dark:text-gray-400 leading-relaxed">
           <p>
-            你好！我是一名全栈开发工程师，专注于 Web 开发领域。
-            热爱技术，喜欢探索新技术，乐于分享学习心得。
+            我是一个蒟蒻小白，没有什么经验，请多指教
           </p>
           <p>
-            这个博客是我记录学习和成长的地方，主要分享前端开发、编程技巧、项目经验等内容。
+            这个博客是我记录学习和成长的地方。
             希望我的文章能够帮助到你！
           </p>
         </div>
