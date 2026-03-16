@@ -429,6 +429,45 @@ body {
   margin: 1.25rem 0;
 }
 
+/* 表格样式 */
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+}
+
+.prose th {
+  background: rgba(0, 0, 0, 0.03);
+  font-weight: 600;
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.dark .prose th {
+  background: rgba(255, 255, 255, 0.05);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.prose td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  vertical-align: top;
+}
+
+.dark .prose td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.prose tr:hover {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.dark .prose tr:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
 /* 文章内的代码块不要额外 margin */
 .prose .code-window {
   margin: 1.5rem 0;
