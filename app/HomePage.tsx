@@ -13,8 +13,8 @@ interface HomePageProps {
 
 // 个人信息配置
 const profile = {
-  name: '陈思远',
-  bio: '学生 / 前端爱好者',
+  name: 'Kuronya~',
+  bio: '学生 / 新手小白',
   location: '中国',
   avatar: '/avatar.jpg', // 可以替换成你自己的头像
   social: {
