@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kuronya 的个人博客
 
-## Getting Started
+> 一个基于 Next.js 构建的 Mac 风格个人技术博客
 
-First, run the development server:
+## 🌐 在线访问
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+**https://satakagintoki.github.io/My_blog/**
+
+## ✨ 特性
+
+- 🎨 **Mac 风格设计** - 毛玻璃效果、红黄绿窗口按钮、简洁优雅
+- 📝 **Markdown 博客** - 支持 GitHub 风格 Markdown（表格、代码高亮等）
+- 🌙 **深色模式** - 自动适配系统主题，一键切换
+- 📱 **响应式设计** - 完美适配桌面端和移动端
+- ⚡ **静态生成** - 极速加载，SEO 友好
+- 🔍 **文章搜索** - 快速查找感兴趣的内容
+- 🏷️ **标签分类** - 按标签浏览文章
+
+## 🛠️ 技术栈
+
+- **框架**: Next.js 16 (App Router)
+- **语言**: TypeScript
+- **样式**: Tailwind CSS 4
+- **动画**: Framer Motion
+- **代码高亮**: Shiki
+- **Markdown**: unified + remark-gfm
+- **部署**: GitHub Pages
+
+## 📁 项目结构
+
+```
+my_blog/
+├── app/                 # 页面路由
+│   ├── HomePage.tsx     # 首页
+│   ├── blog/            # 博客列表和详情
+│   ├── about/           # 关于页面
+│   └── tags/            # 标签页面
+├── components/          # 组件
+├── content/posts/       # Markdown 博客文章
+├── lib/                 # 工具函数
+└── public/              # 静态资源
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 本地开发
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# 安装依赖
+npm install
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# 启动开发服务器
+npm run dev
 
-## Learn More
+# 构建生产版本
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+打开 http://localhost:3000 查看效果。
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📝 写新文章
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+在 `content/posts/` 目录下创建 `.md` 文件：
 
-## Deploy on Vercel
+```markdown
+---
+title: "文章标题"
+date: "2026-03-17"
+tags: ["标签1", "标签2"]
+description: "文章描述"
+author: "Kuronya"
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# 正文内容...
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🔄 更新博客
+
+修改内容后执行：
+
+```bash
+git add -A
+git commit -m "更新内容"
+git push
+```
+
+推送后 GitHub Actions 会自动部署，约 1-2 分钟生效。
+
+## 📄 License
+
+MIT
